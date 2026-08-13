@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Programs | AXIOM Academy</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body class="inner-page">
+
+
+<div id="preloader">
+
+<div class="loader-core">
+<div class="loader-ring"></div>
+<div class="loader-logo">A</div>
+</div>
+
+<div class="loading-text">
+LOADING PROGRAMS<span>_</span>
+</div>
+
+</div>
+
+
+<div class="cursor"></div>
+<div class="cursor-ring"></div>
+
+
+<header class="navbar">
+
+<a href="index.html" class="brand">
+
+<span class="brand-symbol">A</span>
+
+<span>
+<strong>AXIOM</strong>
+<small>ACADEMY</small>
+</span>
+
+</a>
+
+
+<nav class="desktop-nav">
+
+<a href="index.html">Home</a>
+<a href="courses.html" class="active">Courses</a>
+<a href="results.html">Results</a>
+<a href="faculty.html">Faculty</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+
+<a href="contact.html" class="nav-cta magnetic">
+Book Free Counselling
+</a>
+
+
+<button class="mobile-menu-btn" id="mobileMenuBtn">
+☰
+</button>
+
+</header>
+
+
+<div class="mobile-menu" id="mobileMenu">
+
+<a href="index.html">Home</a>
+<a href="courses.html">Courses</a>
+<a href="results.html">Results</a>
+<a href="faculty.html">Faculty</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+
+<main>
+
+
+<section class="page-hero">
+
+<div class="page-hero-glow"></div>
+
+<p class="section-label">
+PROGRAM ARCHITECTURE
+</p>
+
+<h1>
+Choose your
+<span>trajectory.</span>
+</h1>
+
+<p>
+Every program is engineered around the student's current level,
+target examination and desired outcome.
+</p>
+
+</section>
+
+
+<!-- SPIRAL DECK -->
+
+<section class="course-deck-section">
+
+<div class="deck-intro">
+
+<p class="section-label">
+INTERACTIVE PROGRAM DECK
+</p>
+
+<h2>
+Explore the
+<span>program universe.</span>
+</h2>
+
+<p>
+Hover, drag or tap the cards. Every program has been designed
+around a different academic mission.
+</p>
+
+</div>
+
+
+<div class="course-deck" id="courseDeck">
+
+
+<article class="deck-card card-1">
+
+<div class="deck-image"
+style="background-image:url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=85')">
+</div>
+
+<div class="deck-overlay"></div>
+
+<div class="deck-content">
+
+<span>09 — 10</span>
+
+<h3>
+FOUNDATION
+</h3>
+
+<p>
+Build fundamentals.
+Develop competitive thinking.
+</p>
+
+<button onclick="openCourse('foundation')">
+Explore →
+</button>
+
+</div>
+
+</article>
+
+
+<article class="deck-card card-2">
+
+<div class="deck-image"
+style="background-image:url('https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=85')">
+</div>
+
+<div class="deck-overlay"></div>
+
+<div class="deck-content">
+
+<span>CLASS 11</span>
+
+<h3>
+SCIENCE CORE
+</h3>
+
+<p>
+Build the academic foundation
+for JEE and NEET.
+</p>
+
+<button onclick="openCourse('class11')">
+Explore →
+</button>
+
+</div>
+
+</article>
+
+
+<article class="deck-card card-3">
+
+<div class="deck-image"
+style="background-image:url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1200&q=85')">
+</div>
+
+<div class="deck-overlay"></div>
+
+<div class="deck-content">
+
+<span>CLASS 12</span>
+
+<h3>
+BOARD + COMPETITIVE
+</h3>
+
+<p>
+Boards and entrance preparation
+under one system.
+</p>
+
+<button onclick="openCourse('class12')">
+Explore →
+</button>
+
+</div>
+
+</article>
+
+
+<article class="deck-card card-4">
+
+<div class="deck-image"
+style="background-image:url('https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?auto=format&fit=crop&w=1200&q=85')">
+</div>
+
+<div class="deck-overlay"></div>
+
+<div class="deck-content">
+
+<span>ENGINEERING</span>
+
+<h3>
+JEE
+</h3>
+
+<p>
+Main + Advanced rank-focused preparation.
+</p>
+
+<button onclick="openCourse('jee')">
+Explore →
+</button>
+
+</div>
+
+</article>
+
+
+<article class="deck-card card-5">
+
+<div class="deck-image"
+style="background-image:url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=85')">
+</div>
+
+<div class="deck-overlay"></div>
+
+<div class="deck-content">
+
+<span>MEDICAL</span>
+
+<h3>
+NEET
+</h3>
+
+<p>
+Physics + Chemistry + Biology
+with intensive testing.
+</p>
+
+<button onclick="openCourse('neet')">
+Explore →
+</button>
+
+</div>
+
+</article>
+
+</div>
+
+
+<div class="deck-controls">
+
+<button onclick="rotateDeck(-1)">
+← Previous
+</button>
+
+<span id="deckPosition">
+01 / 05
+</span>
+
+<button onclick="rotateDeck(1)">
+Next →
+</button>
+
+</div>
+
+</section>
+
+
+<!-- PROGRAM DETAILS -->
+
+<section class="section course-detail-section">
+
+<div class="course-detail-grid">
+
+<div>
+
+<p class="section-label">
+THE AXIOM SYSTEM
+</p>
+
+<h2>
+More than
+<span>classes.</span>
+</h2>
+
+<p>
+Each program combines live classroom teaching,
+structured study plans, DPPs, mock examinations,
+analytics and mentorship.
+</p>
+
+</div>
+
+
+<div class="detail-points">
+
+<div>
+<span>01</span>
+<strong>LIVE CLASSES</strong>
+<p>Interactive teaching with doubt solving.</p>
+</div>
+
+<div>
+<span>02</span>
+<strong>DAILY PRACTICE</strong>
+<p>Curated problem sets and DPPs.</p>
+</div>
+
+<div>
+<span>03</span>
+<strong>TEST ENGINE</strong>
+<p>Full-length tests with analytics.</p>
+</div>
+
+<div>
+<span>04</span>
+<strong>MENTORSHIP</strong>
+<p>Regular academic performance reviews.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="final-cta">
+
+<p class="section-label">
+NOT SURE WHICH PROGRAM?
+</p>
+
+<h2>
+Let's find your
+<span>perfect fit.</span>
+</h2>
+
+<p>
+Book a free academic counselling session.
+</p>
+
+<a href="contact.html" class="btn btn-primary magnetic">
+Talk to an Expert →
+</a>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+<div class="footer-main">
+
+<div class="footer-brand">
+
+<div class="brand">
+
+<span class="brand-symbol">A</span>
+
+<span>
+<strong>AXIOM</strong>
+<small>ACADEMY</small>
+</span>
+
+</div>
+
+<p>
+Think deeper. Practice harder. Rise higher.
+</p>
+
+</div>
+
+
+<div class="footer-links">
+
+<div>
+<h4>Explore</h4>
+<a href="index.html">Home</a>
+<a href="results.html">Results</a>
+<a href="faculty.html">Faculty</a>
+</div>
+
+<div>
+<h4>Programs</h4>
+<a href="courses.html">Foundation</a>
+<a href="courses.html">JEE</a>
+<a href="courses.html">NEET</a>
+</div>
+
+<div>
+<h4>Contact</h4>
+<a href="tel:+919999999999">+91 99999 99999</a>
+<a href="mailto:hello@axiomacademy.in">hello@axiomacademy.in</a>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<span>© 2026 AXIOM Academy</span>
+
+<span>Premium Coaching Experience</span>
+
+</div>
+
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+
+</body>
+
+</html>
